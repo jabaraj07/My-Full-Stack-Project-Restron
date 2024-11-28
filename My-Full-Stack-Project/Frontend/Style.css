@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.image-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.meal-div{
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+}
+.meal-items{
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    width: 500px;
+    overflow-y: auto;
+    background-color: white;
+    margin: 20px 0;
+    border: 2px solid black;
+
+}
+.meal-items::-webkit-scrollbar{
+    width: 8px;
+}
+.meal-items::-webkit-scrollbar-thumb{
+    background-color: rgb(8, 8, 8);
+    border-radius: 5px;
+}
+.meal-items::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(236, 232, 232);
+}
+.meal-item{
+    display: flex;
+    margin: 15px 0;
+    /* background-color: brown; */
+}
+.meal-item img{
+    width: 120px;
+    height: 100px;
+    margin:0 30px;
+}
+.modal{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(58, 69, 69);
+}
+.modal-content{
+    /* background-color: rgb(10, 240, 98); */
+    padding: 20px;
+    border-radius: 10px;
+    /* width: 100%;
+    height: 90vh; */
+    max-width: 350px;
+    text-align: center;
+    position: relative;
+    color: rebeccapurple;
+}
+.modal-content img{
+    width: 80%;
+    height: 80%;
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+.close{
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    font-size: 44px;
+    cursor: pointer;
+}
+.img-1 img{
+    width: 250px;
+    height: 250px;
+}
+.four-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .four-img-content{
+    background-color: brown;
+    height: 100%;
+} */
+ .first-page-content-head{
+    font-size: 50px;
+    margin-top: 50px;
+ }
+.first-page-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    border-radius: 50%;
+    background-color: black;
+    font-size: 50px;
+    padding: 20px;
+}
+.book-form{
+    width: 600px;
+    padding: 10px;
+    margin: 20px auto;
+    border: 2px solid black;
+    height: auto;
+    border-radius: 8px;
+    background-color: white;
+}
+.form-group{
+    padding: 10px;
+}
+.testimonal-carousal{
+    width: 500px;
+    margin: 0 auto;
+}
+/* .carousel-item{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+} */
+.textimonal-card{
+    height: 200px;
+    width: 100%;
+    background-color: #f8f8f8;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 20px;
+    text-align: center;
+}
+.team-card{
+    width: 240px;
+    height: 270px;
+    background-color: blueviolet;
+    border-radius: 8px;
+}
+.team-card-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+.team-card-1 img{
+    width: 150px;
+    height: 150px;
+}
+.testimonal{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: chartreuse; */
+}
+.chef-card{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(0, 255, 110) */
+}
+.chef-card-full-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 550px;
+    gap: 10px;
+    /* background-color: rgb(148, 144, 152); */
+}
+.chef-card-1{
+    text-align: center;
+    background-color: white;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+}
+.chef-card-1:hover{
+    transform: scale(1.1);
+}
+.chef-card-1-image{
+    width: 140px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+.card-heading{
+    /* background-color: yellow; */
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    margin-top: 5px;
+    width: 70%;
+}
+.footer-1{
+    /* background-color: red; */
+    width: 250px;
+    height: 250px;
+    /* display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    text-align: center; */
+}
+.footer-2,.footer-3,.footer-4{
+    height: 250px;
+    width: 250px;
+}
+.footer-1-content:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+.footer-2-heading{
+    height: 20%;
+    text-align: center;
+}
+.footer-2-content{
+    display: flex;
+    margin-left: 35px;
+}
+.footer-icon-content{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+.footer-icon-content > i {
+    margin-top: 8px;
+    font-size: 25px;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid rgb(243, 175, 4);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon-content > i:hover{
+    color: rgb(250, 2, 2);
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+.footer-4-content{
+    /* background-color: greenyellow; */
+    position: relative;
+    height: 80%;
+}
+.footer-4-content > input{
+    height: 50px;
+    width: 100%;
+}
+.footer-4-content > button{
+    position: absolute;
+    /* left: 20px; */
+    top: 135px;
+    right: 5px;
+    width: 100px;
+    height: 30px;
+    background-color: orange;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.footer-4-content > button:hover{
+    background-color: black;
+    color: white;
+}
+.footer-div{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+}
+@keyframes rotateinfinite {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width:1000px) {
+    .footer-div{
+        height: max-content;
+    }
+    .footer-1,.footer-2,.footer-3,.footer-4{
+        margin:10px 0;
+    }
+}
+@media screen and (max-width:990px) {
+    .four-img{
+        height: 45%;
+        /* display: none; */
+        /* background-color: rgb(55, 55, 239); */
+        margin-top: 20px;
+    }
+    .img-1 img{
+        height: 170px;
+        width: 280px;
+        object-fit: fill;
+    }
+    .about{
+        height: 55%;
+        /* background-color: blueviolet; */
+    }
+    .carousel-item img{
+        width:100%;
+        height: 550px;
+        margin: 40px 0;
+        object-fit: fill;
+    }
+    .testimonal{
+        height: 40vh;
+        width: 100%;
+    }
+    .chef-card{
+        height: 60vh;
+        width: 50%;
+    }
+    .chef-card-full-content{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 600px;
+        height: 480px;
+        gap: 10px;
+        /* background-color: rebeccapurple; */
+    }
+}
+@media screen and (max-width:600px){
+    .img-1 img{
+        height: 160px;
+        width: 180px;
+        object-fit: fill;
+    }
+    .testimonal-carousal{
+        width: 350px;
+        margin: 0 auto;
+    }
+    .chef-card-1{
+        width: 180px;
+    }
+    .first-page-content-head{
+        font-size: 40px;
+        margin-top: 50px;
+     }
+     .footer-2-heading{
+        display: flex;
+     }
+     .footer-2-content,.footer-icon-content{
+        margin: 0;
+     }
+}
+@media screen and (max-width:400px){
+    .carousel-item img{
+        object-fit: fill;
+        height: 400px;
+    }
+    .img-1 img{
+        height: 140px;
+        width: 160px;
+        object-fit: fill;
+    }
+    .chef-card{
+        width: 100%;
+        height: 100%;
+    }
+    .testimonal-carousal{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .chef-card-1{
+        width: 280px;
+        height: 280px;
+        margin: 5px 0;
+    }
+    .chef-card-1-image{
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-top: 5px;
+    }
+    .chef-card-full-content{
+        height: max-content;
+        margin: 10px 0;
+    }
+}
